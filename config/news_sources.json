@@ -1,0 +1,24 @@
+{
+  "brisbane": [
+    {
+      "name": "Brisbane Times",
+      "url": "https://www.brisbanetimes.com.au/rss/feed.xml",
+      "category": "general"
+    },
+    {
+      "name": "ABC News - Brisbane",
+      "url": "https://www.abc.net.au/news/feed/52278/rss.xml",
+      "category": "local"
+    },
+    {
+      "name": "Courier Mail - Brisbane News",
+      "url": "https://www.couriermail.com.au/news/queensland/rss",
+      "category": "local"
+    },
+    {
+      "name": "7NEWS Brisbane",
+      "url": "https://7news.com.au/rss?location=brisbane",
+      "category": "local"
+    }
+  ]
+}

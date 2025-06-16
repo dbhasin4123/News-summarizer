@@ -1,0 +1,9 @@
+feedparser
+requests
+streamlit
+python-dateutil
+nltk
+beautifulsoup4
+geocoder
+pytz
+openai
