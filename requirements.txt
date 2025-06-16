@@ -3,7 +3,7 @@ requests
 streamlit
 python-dateutil
 nltk
-beautifulsoup4
+duckduckgo-search
 geocoder
 pytz
 openai
