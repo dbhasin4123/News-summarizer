@@ -7,19 +7,10 @@ from openai import OpenAI
 class NewsSummarizer:
     def __init__(self, base_url: str = "http://localhost:11434/v1"):
         self.client = OpenAI(base_url=base_url, api_key="ollama")  # required but unused
-        
-        # Try to find the new punkt_tab tokenizer first, then fall back to punkt
         try:
             nltk.data.find("tokenizers/punkt")
         except LookupError:
-            try:
-                nltk.download("punkt", quiet=True)
-            except:
-                # Fallback to older punkt if punkt_tab fails
-                try:
-                    nltk.data.find("tokenizers/punkt")
-                except LookupError:
-                    nltk.download("punkt", quiet=True)
+            nltk.download("punkt")
 
     def _create_messages(self, article: Dict) -> list:
         # Extract first few sentences for context
