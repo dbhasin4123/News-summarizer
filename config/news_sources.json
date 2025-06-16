@@ -20,5 +20,12 @@
       "url": "https://7news.com.au/rss?location=brisbane",
       "category": "local"
     }
+  ],
+  "international": [
+    {
+      "name": "Reuters - World News",
+      "url": "http://feeds.reuters.com/reuters/worldNews",
+      "category": "international"
+    }
   ]
 }
