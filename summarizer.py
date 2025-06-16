@@ -10,10 +10,10 @@ class NewsSummarizer:
         
         # Try to find the new punkt_tab tokenizer first, then fall back to punkt
         try:
-            nltk.data.find("tokenizers/punkt_tab")
+            nltk.data.find("tokenizers/punkt")
         except LookupError:
             try:
-                nltk.download("punkt_tab", quiet=True)
+                nltk.download("punkt", quiet=True)
             except:
                 # Fallback to older punkt if punkt_tab fails
                 try:
